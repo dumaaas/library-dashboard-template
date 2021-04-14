@@ -825,8 +825,17 @@ body{
 .relative{
   position: relative;
 }
+.absolute{
+  position: absolute;
+}
 .fixed{
   position: fixed;
+}
+.right-\[10px\]{
+  right: 10px;
+}
+.top-\[-10px\]{
+  top: -10px;
 }
 .z-20{
   z-index: 20;
@@ -986,6 +995,10 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgba(96, 111, 199, var(--tw-bg-opacity));
 }
+.bg-\[\#EF4F4C\]{
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 79, 76, var(--tw-bg-opacity));
+}
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1059,6 +1072,15 @@ body{
 .pr-\[30px\]{
   padding-right: 30px;
 }
+.pl-\[4px\]{
+  padding-left: 4px;
+}
+.pr-\[5px\]{
+  padding-right: 5px;
+}
+.pt-\[1px\]{
+  padding-top: 1px;
+}
 .pl-\[30px\]{
   padding-left: 30px;
 }
@@ -1106,6 +1128,9 @@ body{
 }
 .text-\[25px\]{
   font-size: 25px;
+}
+.text-\[11px\]{
+  font-size: 11px;
 }
 .text-\[19px\]{
   font-size: 19px;
