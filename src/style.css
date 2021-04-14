@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/* Sidebar transition*/
+.sidebar {
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 83px;
+}
+
+.sidebar-active {
+  width: 266px;
+}
+
+.sidebar-link-active {
+  position: relative;
+}
+
+.sidebar-link-active::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  top: 17px;
+  left: -13px;
+  border-radius: 100%;
+  background-color: #576cdf;
+  position: absolute;
+}
+
+/* Book navigation underline*/
+.active-book-nav {
+  color: #3B82F6;
+  border-bottom: 2px solid #3B82F6;
+  padding-bottom: 18px;
+}
+
+.active-book-nav:hover {
+  color: #1D4ED8;
+}
+
+
+/* Showing scroll only on hover of the content */
+.scroll {
+  overflow-y: scroll;
+  mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  mask-size: 100% 20000px;
+  mask-position: left bottom;
+  -webkit-mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  -webkit-mask-size: 100% 20000px;
+  -webkit-mask-position: left bottom;
+  transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+}
+
+.scroll:hover {
+  -webkit-mask-position: left top;
+}
+
+/* Styling scroll */
+.scroll::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c9c8c8;
+}
+
+.svg-icon-bildstudio {
+  fill: white;
+  width: 100px;
+}
+
+/*Show More/Show less - cards*/
+.activity-showMore {
+  display: none;
+  cursor: pointer;
+}
+
+.complete {
+  display: none;
+}
+
+/*Height*/
+.height-content {
+  height: calc(100% - 115px);
+}
+
+.height-dashboard {
+  height: calc(100% - 136px);
+}
+
+.nav-height {
+  height: calc(100% - 60px);
+}
+
+.height-vratiKnjigu {
+  height: calc(100% - 192px);
+}
+
+.height-izdajKnjigu {
+  height: calc(100% - 156px);
+}
+
+.height-osnovniDetalji {
+  height: calc(100% - 134px);
+}
+
+.height-profile {
+  height: calc(100% - 153px);
+}
+
+.height-ucenikProfile {
+  height: calc(100% - 184px);
+}
+
+.height-detaljiIzdavanje {
+  height: calc(100% - 148px);
+}
+
+.height-ucenikEvidencija {
+  height: calc(100% - 200px);
+}
+
+.width-evidencija {
+  width: calc(100% - 300px);
+}
+
+/*Show More/Show less - text*/
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+  display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+  display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  margin-left: 2px;
+  color: #3B82F6;
+  cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+  display: block;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden;
+    font-family: 'Rubik', sans-serif;
+  }
+}
